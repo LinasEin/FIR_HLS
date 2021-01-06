@@ -1,0 +1,69 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LegUp-8.1/workspace/wake_word_hdl/simulation
+vFIRFilterStreaming
+Z1 !s110 1607170358
+!i10b 1
+!s100 hkaA@Oe7Qo2DH2_b=SoJd1
+IObSAZemkCag<ZmcGO3ISm1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1607169879
+Z4 8../wake_word_hdl.v
+Z5 F../wake_word_hdl.v
+L0 107
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+Z7 !s108 1607170358.553000
+Z8 !s107 ../streaming_tb.v|../wake_word_hdl.v|
+Z9 !s90 ../wake_word_hdl.v|../streaming_tb.v|
+!i113 1
+n@f@i@r@filter@streaming
+vFIRFilterStreaming_top
+R1
+!i10b 1
+!s100 Ca2CTa]cSlLTH5LS?NAS<0
+Ifob6:5AFM35Q=N5@Ag<i83
+R2
+R0
+R3
+R4
+R5
+L0 14
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+n@f@i@r@filter@streaming_top
+vstreaming_tb
+R1
+!i10b 1
+!s100 5M1WX_YQ59OQnLE0AB1@G1
+I[PaIn91cklf0gcJNmXXQH2
+R2
+R0
+w1607168795
+8../streaming_tb.v
+F../streaming_tb.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1

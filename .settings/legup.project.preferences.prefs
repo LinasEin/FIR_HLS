@@ -1,0 +1,9 @@
+Custom_FPGA_device=true
+FPGA_device=EP4CE22F17C6N
+FPGA_family=Cyclone IV
+FPGA_vendor=Intel
+Hybrid_system=hw_only
+constraints=function_pipeline; ;FIRFilterStreaming\nset_custom_top_level_module; ;FIRFilterStreaming\nset_synthesis_top_module; ;FIRFilterStreaming_top\nset_operation_latency;multiply; 1\nCLOCK_PERIOD; ;10\nset_custom_test_bench_module;;streaming_tb\nset_custom_test_bench_file;;streaming_tb.v\n
+eclipse.preferences.version=1
+test_bench_file=streaming_tb.v 
+test_bench_module=streaming_tb

@@ -1,0 +1,20 @@
+// ----------------------------------------------------------------------------
+// LegUp High-Level Synthesis Tool Version 8.1 (http://www.legupcomputing.com)
+// Copyright (c) 2015-2020 LegUp Computing Inc. All Rights Reserved.
+// For technical issues, please contact: support@legupcomputing.com
+// For general inquiries, please contact: info@legupcomputing.com
+// Date: Sat Dec  5 14:04:39 2020
+// ----------------------------------------------------------------------------
+Target FPGA: INTEL CycloneIV
+Clock period constraint: -1.000000e+00ns
+Start Function: _Z18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_
+state: LEGUP_0, basic block: LEGUP_0
+   Transition: if (<null>): LEGUP_pipeline_wait_FIRFilterStreaming_1 default: LEGUP_0
+state: LEGUP_pipeline_wait_FIRFilterStreaming_1, basic block: BB_entry, pipeline type: function, pipeline ID: _Z18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_1
+   ret void, !dbg !182, !MSB !181, !LSB !163, !extendFrom !181, !legup.II !174, !legup.totalTime !183, !legup.maxStage !177, !legup.tripCount !163, !legup.pipeline.start_time !163, !legup.pipeline.avail_time !163, !legup.pipeline.stage !163, !legup.function_pipelined !174
+   Transition: if (<null>): LEGUP_0 default: LEGUP_pipeline_wait_FIRFilterStreaming_1
+
+Basic Block: %entry Num States: 4
+End Function: _Z18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,102 @@
+// ----------------------------------------------------------------------------
+// LegUp High-Level Synthesis Tool Version 8.1 (http://www.legupcomputing.com)
+// Copyright (c) 2015-2020 LegUp Computing Inc. All Rights Reserved.
+// For technical issues, please contact: support@legupcomputing.com
+// For general inquiries, please contact: info@legupcomputing.com
+// Date: Sat Dec  5 14:04:39 2020
+// ----------------------------------------------------------------------------
+
+LegUp Summary Report for Project: wake_word_hdl.
+
+Table of Contents
+  1. Scheduling Result
+  2. Pipeline Result
+  3. Memory Usage
+  4. Accelerator Information
+  5. Resource Binding with Adaptive Latency
+
+
+====== 1. Scheduling Result ======
+
+Please use LegUp's schedule viewer to examine the schedule.
+
+Basic Block Latencies:
+
++---------------------------------------------------+
+| Function: FIRFilterStreaming (pipelined function) |
++------------------------+--------------------------+
+| Basic Block            | Cycle Latency            |
++------------------------+--------------------------+
+| %entry                 | 4                        |
++------------------------+--------------------------+
+
+====== 2. Pipeline Result ======
+
++--------------------+------------------------------------------------------------------------+-------------+-------------------------+---------------------+-----------------+-----------------+---------+
+| Label              | Function                                                               | Basic Block | Location in Source Code | Initiation Interval | Pipeline Length | Iteration Count | Latency |
++--------------------+------------------------------------------------------------------------+-------------+-------------------------+---------------------+-----------------+-----------------+---------+
+| FIRFilterStreaming | FIRFilterStreaming(legup::FIFO<int, false>&, legup::FIFO<int, false>&) | %entry      | line 13 of fir.cpp      | 1                   | 4               | n/a             | n/a     |
++--------------------+------------------------------------------------------------------------+-------------+-------------------------+---------------------+-----------------+-----------------+---------+
+
+====== 3. Memory Usage ======
+
++------------------------------------------------------------------------------------------------------+
+| Local Memories                                                                                       |
++--------------------------------+-----------------------+----------+-------------+------------+-------+
+| Name                           | Accessing Function(s) | Type     | Size [Bits] | Data Width | Depth |
++--------------------------------+-----------------------+----------+-------------+------------+-------+
+| FIRFilterStreaming_previous_0  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_3  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_1  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_2  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_5  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_4  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_7  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_10 | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_13 | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_6  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_9  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_8  | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_11 | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_12 | FIRFilterStreaming    | Register | 32          | 32         | 1     |
+| FIRFilterStreaming_previous_14 | FIRFilterStreaming    | Register | 32          | 32         | 1     |
++--------------------------------+-----------------------+----------+-------------+------------+-------+
+
++-------------------------+
+| Local Constant Memories |
++-------------------------+
+| None                    |
++-------------------------+
+
++-----------------------+
+| Shared Local Memories |
++-----------------------+
+| None                  |
++-----------------------+
+
++------------------+
+| Aliased Memories |
++------------------+
+| None             |
++------------------+
+
++----------------------------------------------------------------------------------------+
+| I/O Memories                                                                           |
++-------------+-----------------------+---------------+-------------+------------+-------+
+| Name        | Accessing Function(s) | Type          | Size [Bits] | Data Width | Depth |
++-------------+-----------------------+---------------+-------------+------------+-------+
+| output_fifo | FIRFilterStreaming    | FIFO (LUTRAM) | 0           | 32         | 0     |
+| input_fifo  | FIRFilterStreaming    | FIFO (LUTRAM) | 0           | 32         | 0     |
++-------------+-----------------------+---------------+-------------+------------+-------+
+
+
+====== 4. Accelerator Information ======
+
+No accelerator function is generated.
+
+====== 5. Resource Binding with Adaptive Latency ======
+
+Binding to resource with adaptive latency is disabled.
+You can enable this feature by setting config parameter 'ADAPTIVE_LATENCY_BINDING' to 1.
+
+

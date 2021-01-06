@@ -1,0 +1,27 @@
+==================================================================
+=====  Summary Report for RTL Simulation and FPGA Synthesis  =====
+==================================================================
+
+Project name: wake_word_hdl
+FPGA Vendor: INTEL
+Device Family: CycloneIV
+Device: EP4CE22F17C6N
+
+Table of Contents
+  1. Simulation Cycle Latency
+  2. Timing Result
+  3. Resource Usage
+
+
+====== 1. Simulation Cycle Latency ======
+
+N/A. Cycle latency is not available for custom testbench.
+
+====== 2. Timing Result ======
+
+N/A. Please run 'synthesis' to obtain the timing result.
+
+====== 3. Resource Usage ======
+
+N/A. Please run 'synthesis' to obtain the resource usage result.
+

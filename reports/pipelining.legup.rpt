@@ -1,0 +1,294 @@
+// ----------------------------------------------------------------------------
+// LegUp High-Level Synthesis Tool Version 8.1 (http://www.legupcomputing.com)
+// Copyright (c) 2015-2020 LegUp Computing Inc. All Rights Reserved.
+// For technical issues, please contact: support@legupcomputing.com
+// For general inquiries, please contact: info@legupcomputing.com
+// Date: Sat Dec  5 14:04:39 2020
+// ----------------------------------------------------------------------------
+Found Function: _Z18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_
+Label: _Z18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_
+ID: _Z18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_1
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Scheduled.
+MII = 1
+II = 1
+Final Pipeline Schedule:
+Total pipeline stages: 4
+Stage: 0
+Time: 0 Stage: 0 instr:   %0 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.14, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %1 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.13, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %2 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.12, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select37 = call i31 @legup_bit_select_31_32(i32 %2, i64 30, i64 0), !MSB !164, !LSB !163, !extendFrom !164
+Time: 0 Stage: 0 instr:   %3 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.11, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select35 = call i31 @legup_bit_select_31_32(i32 %3, i64 30, i64 0), !MSB !164, !LSB !163, !extendFrom !164
+Time: 0 Stage: 0 instr:   %4 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.10, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select33 = call i30 @legup_bit_select_30_32(i32 %4, i64 29, i64 0), !MSB !165, !LSB !163, !extendFrom !165
+Time: 0 Stage: 0 instr:   %5 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.9, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select31 = call i30 @legup_bit_select_30_32(i32 %5, i64 29, i64 0), !MSB !165, !LSB !163, !extendFrom !165
+Time: 0 Stage: 0 instr:   %6 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.8, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select29 = call i31 @legup_bit_select_31_32(i32 %6, i64 30, i64 0), !MSB !164, !LSB !163, !extendFrom !164
+Time: 0 Stage: 0 instr:   %bit_select27 = call i30 @legup_bit_select_30_32(i32 %6, i64 29, i64 0), !MSB !165, !LSB !163, !extendFrom !165
+Time: 0 Stage: 0 instr:   %7 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.7, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select25 = call i29 @legup_bit_select_29_32(i32 %7, i64 28, i64 0), !MSB !166, !LSB !163, !extendFrom !166
+Time: 0 Stage: 0 instr:   %8 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.6, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select23 = call i29 @legup_bit_select_29_32(i32 %8, i64 28, i64 0), !MSB !166, !LSB !163, !extendFrom !166
+Time: 0 Stage: 0 instr:   %9 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.5, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select21 = call i29 @legup_bit_select_29_32(i32 %9, i64 28, i64 0), !MSB !166, !LSB !163, !extendFrom !166
+Time: 0 Stage: 0 instr:   %10 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.4, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select19 = call i31 @legup_bit_select_31_32(i32 %10, i64 30, i64 0), !MSB !164, !LSB !163, !extendFrom !164
+Time: 0 Stage: 0 instr:   %bit_select17 = call i29 @legup_bit_select_29_32(i32 %10, i64 28, i64 0), !MSB !166, !LSB !163, !extendFrom !166
+Time: 0 Stage: 0 instr:   %11 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.3, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select15 = call i31 @legup_bit_select_31_32(i32 %11, i64 30, i64 0), !MSB !164, !LSB !163, !extendFrom !164
+Time: 0 Stage: 0 instr:   %bit_select13 = call i29 @legup_bit_select_29_32(i32 %11, i64 28, i64 0), !MSB !166, !LSB !163, !extendFrom !166
+Time: 0 Stage: 0 instr:   %12 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.2, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select11 = call i30 @legup_bit_select_30_32(i32 %12, i64 29, i64 0), !MSB !165, !LSB !163, !extendFrom !165
+Time: 0 Stage: 0 instr:   %bit_select9 = call i29 @legup_bit_select_29_32(i32 %12, i64 28, i64 0), !MSB !166, !LSB !163, !extendFrom !166
+Time: 0 Stage: 0 instr:   %13 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.1, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select7 = call i30 @legup_bit_select_30_32(i32 %13, i64 29, i64 0), !MSB !165, !LSB !163, !extendFrom !165
+Time: 0 Stage: 0 instr:   %bit_select5 = call i29 @legup_bit_select_29_32(i32 %13, i64 28, i64 0), !MSB !166, !LSB !163, !extendFrom !166
+Time: 0 Stage: 0 instr:   %14 = load i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.0, align 4, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select1 = call i28 @legup_bit_select_28_32(i32 %14, i64 27, i64 0), !MSB !167, !LSB !163, !extendFrom !167
+Time: 0 Stage: 0 instr:   %15 = tail call i32 @__legup_fifo_read.i32(i32* %input_fifo) #2, !dbg !168, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select = call i28 @legup_bit_select_28_32(i32 %15, i64 27, i64 0), !MSB !167, !LSB !163, !extendFrom !167
+Time: 0 Stage: 0 instr:   %call1 = tail call i32 (i8*, ...)* @printf(i8* getelementptr inbounds ([30 x i8]* @.str, i32 0, i32 0), i32 %15) #3, !dbg !170, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat38 = call i32 @legup_bit_concat_31_1(i31 %bit_select37, i64 31, i1 false, i64 1), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %add.2 = add nsw i32 %bit_concat38, %1, !dbg !171, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat36 = call i32 @legup_bit_concat_31_1(i31 %bit_select35, i64 31, i1 false, i64 1), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add1 = add i32 %3, %bit_concat36, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat34 = call i32 @legup_bit_concat_30_2(i30 %bit_select33, i64 30, i2 0, i64 2), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %newEarly.add_4 = add i32 %sr_add1, %bit_concat34, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat32 = call i32 @legup_bit_concat_30_2(i30 %bit_select31, i64 30, i2 0, i64 2), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add3 = add i32 %5, %bit_concat32, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %newEarly.add_5 = add i32 %add.2, %sr_add3, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat30 = call i32 @legup_bit_concat_31_1(i31 %bit_select29, i64 31, i1 false, i64 1), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat28 = call i32 @legup_bit_concat_30_2(i30 %bit_select27, i64 30, i2 0, i64 2), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add6 = add i32 %bit_concat30, %bit_concat28, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_negate = sub i32 0, %7, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat26 = call i32 @legup_bit_concat_29_3(i29 %bit_select25, i64 29, i3 0, i64 3), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add8 = add i32 %sr_negate, %bit_concat26, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat24 = call i32 @legup_bit_concat_29_3(i29 %bit_select23, i64 29, i3 0, i64 3), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %newEarly.newEarly_add_8 = add i32 %sr_add6, %bit_concat24, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat22 = call i32 @legup_bit_concat_29_3(i29 %bit_select21, i64 29, i3 0, i64 3), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add10 = add i32 %9, %bit_concat22, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat20 = call i32 @legup_bit_concat_31_1(i31 %bit_select19, i64 31, i1 false, i64 1), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat18 = call i32 @legup_bit_concat_29_3(i29 %bit_select17, i64 29, i3 0, i64 3), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add13 = add i32 %bit_concat20, %bit_concat18, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat16 = call i32 @legup_bit_concat_31_1(i31 %bit_select15, i64 31, i1 false, i64 1), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat14 = call i32 @legup_bit_concat_29_3(i29 %bit_select13, i64 29, i3 0, i64 3), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add17 = add i32 %11, %bit_concat16, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add18 = add i32 %bit_concat14, %sr_add17, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat12 = call i32 @legup_bit_concat_30_2(i30 %bit_select11, i64 30, i2 0, i64 2), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat10 = call i32 @legup_bit_concat_29_3(i29 %bit_select9, i64 29, i3 0, i64 3), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add21 = add i32 %bit_concat12, %bit_concat10, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat8 = call i32 @legup_bit_concat_30_2(i30 %bit_select7, i64 30, i2 0, i64 2), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat6 = call i32 @legup_bit_concat_29_3(i29 %bit_select5, i64 29, i3 0, i64 3), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add24 = add i32 %13, %bit_concat8, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add25 = add i32 %bit_concat6, %sr_add24, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_negate24 = sub i32 0, %14, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_select3 = call i31 @legup_bit_select_31_32(i32 %sr_negate24, i64 30, i64 0), !MSB !164, !LSB !163, !extendFrom !164
+Time: 0 Stage: 0 instr:   %bit_concat4 = call i32 @legup_bit_concat_31_1(i31 %bit_select3, i64 31, i1 false, i64 1), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat2 = call i32 @legup_bit_concat_28_4(i28 %bit_select1, i64 28, i4 0, i64 4), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add27 = add i32 %bit_concat4, %bit_concat2, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_negate26 = sub i32 0, %15, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %bit_concat = call i32 @legup_bit_concat_28_4(i28 %bit_select, i64 28, i4 0, i64 4), !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %sr_add28 = add i32 %sr_negate26, %bit_concat, !MSB !162, !LSB !163, !extendFrom !162
+Time: 0 Stage: 0 instr:   %cmp13 = icmp eq i32 %0, 0, !dbg !174, !MSB !163, !LSB !163, !extendFrom !163
+Time: 0 Stage: 0 instr:   store i32 %1, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.14, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %2, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.13, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %3, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.12, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %4, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.11, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %5, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.10, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %6, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.9, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %7, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.8, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %8, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.7, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %9, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.6, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %10, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.5, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %11, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.4, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %12, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.3, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %13, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.2, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %14, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.1, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   store i32 %15, i32* @_ZZ18FIRFilterStreamingRN5legup4FIFOIiLb0EEES2_E8previous.0, align 4, !MSB !178, !LSB !163, !extendFrom !178
+Time: 0 Stage: 0 instr:   ret void, !dbg !179, !MSB !178, !LSB !163, !extendFrom !178
+Stage: 1
+Time: 1 Stage: 1 instr:   %newEarly.newEarly_add_9 = add i32 %sr_add8, %sr_add10, !MSB !162, !LSB !163, !extendFrom !162
+Time: 1 Stage: 1 instr:   %newEarly.newEarly_add_12 = add i32 %newEarly.newEarly_add_8, %sr_add21, !MSB !162, !LSB !163, !extendFrom !162
+Time: 1 Stage: 1 instr:   %newEarly.newEarly_add_13 = add i32 %sr_add18, %sr_add25, !MSB !162, !LSB !163, !extendFrom !162
+Time: 1 Stage: 1 instr:   %newEarly.newEarly_newEarly_add_14 = add i32 %sr_add13, %sr_add27, !MSB !162, !LSB !163, !extendFrom !162
+Time: 1 Stage: 1 instr:   %newCurOp.newEarly_newEarly_add_14 = add i32 %newEarly.add_4, %newEarly.newEarly_newEarly_add_14, !MSB !162, !LSB !163, !extendFrom !162
+Time: 1 Stage: 1 instr:   %newEarly.newEarly_newEarly_add_15 = add i32 %newEarly.add_5, %sr_add28, !MSB !162, !LSB !163, !extendFrom !162
+Time: 1 Stage: 1 instr:   %newCurOp.newEarly_newEarly_add_15 = add i32 %newEarly.newEarly_newEarly_add_15, %newEarly.newEarly_add_9, !MSB !162, !LSB !163, !extendFrom !162
+Stage: 2
+Time: 2 Stage: 2 instr:   %newCurOp.newEarly_add_14 = add i32 %newCurOp.newEarly_newEarly_add_14, %newEarly.newEarly_add_12, !MSB !162, !LSB !163, !extendFrom !162
+Time: 2 Stage: 2 instr:   %newCurOp.newEarly_add_15 = add i32 %newCurOp.newEarly_newEarly_add_15, %newEarly.newEarly_add_13, !MSB !162, !LSB !163, !extendFrom !162
+Time: 2 Stage: 2 instr:   %newCurOp.add_15 = add i32 %newCurOp.newEarly_add_14, %newCurOp.newEarly_add_15, !MSB !162, !LSB !163, !extendFrom !162
+Stage: 3
+Time: 3 Stage: 3 instr:   %cond = select i1 %cmp13, i32 0, i32 %newCurOp.add_15, !dbg !174, !MSB !162, !LSB !163, !extendFrom !162
+Time: 3 Stage: 3 instr:   %call14 = tail call i32 (i8*, ...)* @printf(i8* getelementptr inbounds ([31 x i8]* @.str1, i32 0, i32 0), i32 %cond) #3, !dbg !175, !MSB !162, !LSB !163, !extendFrom !162
+Time: 3 Stage: 3 instr:   tail call void @__legup_fifo_write.i32.i32(i32* %output_fifo, i32 %cond) #2, !dbg !176, !MSB !178, !LSB !163, !extendFrom !178
+
+
+Pipeline Table:
+Total pipeline stages: 4
+Stage:        0              1              2              3
+   II:        0     |        0     |        0     |        0
+ Time:        0     |        1     |        2     |        3
+             %0             %0             %0             %0
+             %1             %1             %1             %1
+             %2             %2             %2             %2
+%bit_select3...%bit_select3...%bit_select3...%bit_select3...
+             %3             %3             %3             %3
+%bit_select3...%bit_select3...%bit_select3...%bit_select3...
+             %4             %4             %4             %4
+%bit_select3...%bit_select3...%bit_select3...%bit_select3...
+             %5             %5             %5             %5
+%bit_select3...%bit_select3...%bit_select3...%bit_select3...
+             %6             %6             %6             %6
+%bit_select2...%bit_select2...%bit_select2...%bit_select2...
+%bit_select2...%bit_select2...%bit_select2...%bit_select2...
+             %7             %7             %7             %7
+%bit_select2...%bit_select2...%bit_select2...%bit_select2...
+             %8             %8             %8             %8
+%bit_select2...%bit_select2...%bit_select2...%bit_select2...
+             %9             %9             %9             %9
+%bit_select2...%bit_select2...%bit_select2...%bit_select2...
+            %10            %10            %10            %10
+%bit_select1...%bit_select1...%bit_select1...%bit_select1...
+%bit_select1...%bit_select1...%bit_select1...%bit_select1...
+            %11            %11            %11            %11
+%bit_select1...%bit_select1...%bit_select1...%bit_select1...
+%bit_select1...%bit_select1...%bit_select1...%bit_select1...
+            %12            %12            %12            %12
+%bit_select1...%bit_select1...%bit_select1...%bit_select1...
+   %bit_select9   %bit_select9   %bit_select9   %bit_select9
+            %13            %13            %13            %13
+   %bit_select7   %bit_select7   %bit_select7   %bit_select7
+   %bit_select5   %bit_select5   %bit_select5   %bit_select5
+            %14            %14            %14            %14
+   %bit_select1   %bit_select1   %bit_select1   %bit_select1
+            %15            %15            %15            %15
+    %bit_select    %bit_select    %bit_select    %bit_select
+         %call1         %call1         %call1         %call1
+%bit_concat3...%bit_concat3...%bit_concat3...%bit_concat3...
+         %add.2         %add.2         %add.2         %add.2
+%bit_concat3...%bit_concat3...%bit_concat3...%bit_concat3...
+       %sr_add1       %sr_add1       %sr_add1       %sr_add1
+%bit_concat3...%bit_concat3...%bit_concat3...%bit_concat3...
+%newEarly.ad...%newEarly.ad...%newEarly.ad...%newEarly.ad...
+%bit_concat3...%bit_concat3...%bit_concat3...%bit_concat3...
+       %sr_add3       %sr_add3       %sr_add3       %sr_add3
+%newEarly.ad...%newEarly.ad...%newEarly.ad...%newEarly.ad...
+%bit_concat3...%bit_concat3...%bit_concat3...%bit_concat3...
+%bit_concat2...%bit_concat2...%bit_concat2...%bit_concat2...
+       %sr_add6       %sr_add6       %sr_add6       %sr_add6
+     %sr_negate     %sr_negate     %sr_negate     %sr_negate
+%bit_concat2...%bit_concat2...%bit_concat2...%bit_concat2...
+       %sr_add8       %sr_add8       %sr_add8       %sr_add8
+%bit_concat2...%bit_concat2...%bit_concat2...%bit_concat2...
+%newEarly.ne...%newEarly.ne...%newEarly.ne...%newEarly.ne...
+%bit_concat2...%bit_concat2...%bit_concat2...%bit_concat2...
+      %sr_add10      %sr_add10      %sr_add10      %sr_add10
+              -%newEarly.ne...%newEarly.ne...%newEarly.ne...
+%bit_concat2...%bit_concat2...%bit_concat2...%bit_concat2...
+%bit_concat1...%bit_concat1...%bit_concat1...%bit_concat1...
+      %sr_add13      %sr_add13      %sr_add13      %sr_add13
+%bit_concat1...%bit_concat1...%bit_concat1...%bit_concat1...
+%bit_concat1...%bit_concat1...%bit_concat1...%bit_concat1...
+      %sr_add17      %sr_add17      %sr_add17      %sr_add17
+      %sr_add18      %sr_add18      %sr_add18      %sr_add18
+%bit_concat1...%bit_concat1...%bit_concat1...%bit_concat1...
+%bit_concat1...%bit_concat1...%bit_concat1...%bit_concat1...
+      %sr_add21      %sr_add21      %sr_add21      %sr_add21
+              -%newEarly.ne...%newEarly.ne...%newEarly.ne...
+   %bit_concat8   %bit_concat8   %bit_concat8   %bit_concat8
+   %bit_concat6   %bit_concat6   %bit_concat6   %bit_concat6
+      %sr_add24      %sr_add24      %sr_add24      %sr_add24
+      %sr_add25      %sr_add25      %sr_add25      %sr_add25
+              -%newEarly.ne...%newEarly.ne...%newEarly.ne...
+   %sr_negate24   %sr_negate24   %sr_negate24   %sr_negate24
+   %bit_select3   %bit_select3   %bit_select3   %bit_select3
+   %bit_concat4   %bit_concat4   %bit_concat4   %bit_concat4
+   %bit_concat2   %bit_concat2   %bit_concat2   %bit_concat2
+      %sr_add27      %sr_add27      %sr_add27      %sr_add27
+              -%newEarly.ne...%newEarly.ne...%newEarly.ne...
+              -%newCurOp.ne...%newCurOp.ne...%newCurOp.ne...
+              -              -%newCurOp.ne...%newCurOp.ne...
+   %sr_negate26   %sr_negate26   %sr_negate26   %sr_negate26
+    %bit_concat    %bit_concat    %bit_concat    %bit_concat
+      %sr_add28      %sr_add28      %sr_add28      %sr_add28
+              -%newEarly.ne...%newEarly.ne...%newEarly.ne...
+              -%newCurOp.ne...%newCurOp.ne...%newCurOp.ne...
+              -              -%newCurOp.ne...%newCurOp.ne...
+              -              -%newCurOp.ad...%newCurOp.ad...
+         %cmp13         %cmp13         %cmp13         %cmp13
+              -              -              -          %cond
+              -              -              -        %call14
+              -              -              -       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+       <badref>       <badref>       <badref>       <badref>
+
